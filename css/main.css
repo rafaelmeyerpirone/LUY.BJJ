@@ -1,0 +1,7 @@
+.nav-link {
+    color: #fcac15;
+}
+
+.nav-link active {
+    color: white;
+}
