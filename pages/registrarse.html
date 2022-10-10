@@ -1,61 +1,385 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
-    <!-- Hoja de estilo -->
-    <link rel="stylesheet" href="../css/main.css">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Título página -->
-    <title>LUYBJJ - Registro</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
-          <!-- Favicon -->
+  <!-- Hoja de estilo -->
+  <link rel="stylesheet" href="../css/main.css">
+
+  <!-- Título página -->
+  <title>LUYBJJ - Registro</title>
+
+  <!-- Favicon -->
   <link rel="shortcut icon" type="image/png" href="../img/LUYBJJ-30x30-bull-only-round.png" />
-  
-  </head>
+
+</head>
 <!-- Header + Nav -->
 
-  <body>
-    <nav class="navbar bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="../index.html">
-          <img src="../img/LUYBJJ-1500x1500-no-background.png" alt="Logo" width="75" height="75" class="d-inline-block">
-            Liga Uruguaya de Jiu-Jitsu Brasilero
-          </a>
+<body>
+  <nav class="navbar bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../index.html">
+        <img src="../img/LUYBJJ-1500x1500-no-background.png" alt="Logo" width="75" height="75" class="d-inline-block">
+        Liga Uruguaya de Jiu-Jitsu Brasilero
+      </a>
+    </div>
+  </nav>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid bg-primary bg-gradient">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link" href="../index.html">Inicio</a>
+          <a class="nav-link active text-white" aria-current="page" href="../pages/registrarse.html">Registrarse</a>
+          <a class="nav-link" href="../pages/registro.html">Registro</a>
+          <a class="nav-link" href="../pages/resultado.html">Resultados</a>
+          <a class="nav-link" href="../pages/eventos.html">Eventos</a>
+          <a class="nav-link" href="../pages/seminarios.html">Seminarios</a>
+          <a class="nav-link" href="../pages/torneos.html">Torneos</a>
+          <a class="nav-link" href="../pages/contacto.html">Contacto</a>
         </div>
-      </nav>
-      <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid bg-primary bg-gradient">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Inicio intro -->
+
+  <div class="container px-4 py-5">
+    <h2 class="pb-2 border-bottom">Formularios para registrarse</h2>
+
+    <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5">
+      <div class="d-flex flex-column align-items-start gap-2">
+        <h3 class="fw-bold">Para que registrate</h3>
+        <p class="text-body">
+          <br>
+          El estar registrado sirve a que los demás nos conozcan y tener una base de datos de acceso donde todos podemos
+          encontrar donde entrenar o contactar para organizar eventos.
+          <br>
+          <br>
+          La información se mantiene abierta, no se comparten números de contacto ni mail para evitar spam.
+          <br>
+          <br>
+          Nunca te contactaremos ni daremos tu información de contacto personal.
+          <br>
+          <br>
+          Solo mostraremos tu nombre, apellido, datos pertinentes a Jiu-jitsu y tu instagram en caso que lo hayas
+          proporcionado.
+          <br>
+        </p>
+      </div>
+
+      <div class="row row-cols-1 row-cols-sm-2 g-4">
+
+        <div class="d-flex flex-column gap-2">
+          <img src="../img/LUYBJJ-150×150.png" alt="LUYBJJ-150×150 logo" width="30px" height="30px">
+          <a href="../pages/registro.html#atletas_registrados"><h4 class="fw-semibold mb-0">Atletas</h4>
+          </a>
+          <p class="text-muted">Formulario de registro de atletas</p>
+
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#regsitroatleta">
+            Registrate
           </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-link" href="../index.html">Inicio</a>
-              <a class="nav-link active text-white" aria-current="page" href="../pages/registrarse.html">Registrarse</a>
-              <a class="nav-link" href="../pages/registro.html">Registro</a>
-              <a class="nav-link" href="../pages/resultado.html">Resultado</a>
-              <a class="nav-link" href="../pages/eventos.html">Eventos</a>
-              <a class="nav-link" href="../pages/seminarios.html">Seminarios</a>
-              <a class="nav-link" href="../pages/torneos.html">Torneos</a>
-              <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+
+          <!-- Modal -->
+          <div class="modal fade" id="regsitroatleta" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="staticBackdropLabel">Formulario de retistro atletas</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                  <!-- Formulario de registro atleta -->
+
+                  <form action="" class="form">
+                    <div>
+                      <label for="">Nombre (o nombres si tenés mas de uno y queres compartirlo)</label>
+                      <input type="text">
+                    </div>
+                    <br>
+                    <div>
+                      <label for="">Apellidos (uno o dos, como prefieras)</label>
+                      <input type="text">
+                    </div>
+                    <br>
+                    <div>
+                      <label for="">Fecha de nacimiento</label>
+                      <input type="date">
+                    </div>
+                    <br>
+                    <div>
+                      <label for="">email / instagram</label>
+                      <input type="text">
+                    </div>
+                    <br>
+                    <div>
+                      <label for="">Año de inicio (e.g. 2020)</label>
+                      <input type="text">
+                    </div>
+                    <br>
+                    <div>
+                      <label for="">Academia</label>
+                      <input type="text">
+                    </div>
+                    <br>
+                    <div>
+                      <label for="">Equipo (si es el mismo que la academia también completar)</label>
+                      <input type="text">
+                    </div>
+                    <br>
+                    <div>
+                      Cinturón:
+                      <label for="faixa">Seleccional cinturón</label>
+                      <select name="faixa" id="faixa">
+                        <option value="blanco">Blanco</option>
+                        <option value="azul">Azúl</option>
+                        <option value="violeta">Violeta</option>
+                        <option value="marron">Marrón</option>
+                        <option value="negro">Negro</option>
+                      </select>
+
+                    </div>
+                    <br>
+                    <div>
+                      Categoría peso:
+                      <label for="peso">Peso</label>
+                      <select name="peso" id="peso">
+                        <option value="gallo">Gallo</option>
+                        <option value="pluma">Pluma</option>
+                        <option value="pena">Pena</option>
+                        <option value="liviano">Liviano</option>
+                        <option value="medio">Medio</option>
+                        <option value="medio-pesado">Medio pesado</option>
+                        <option value="pesado">Pesado</option>
+                        <option value="super-pesado">Super pesado</option>
+                        <option value="ultra-pesado">Ultra pesado</option>
+                      </select>
+                      <a href="../img/ibjjf-weight-list-adults-gi.jpg" target="_blank">(Tabla de peso con Gi)</a>
+                    </div>
+
+
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                  <button type="button" class="btn btn-primary">Enviar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
+
+        <div class="d-flex flex-column gap-2">
+          <img src="../img/LUYBJJ-150×150.png" alt="LUYBJJ-150×150 logo" width="30px" height="30px">
+          <a href="../pages/registro.html#academias_registradas"><h4 class="fw-semibold mb-0">Academias</h4></a>
+
+          <p class="text-muted">Formulario de registro de Academias</p>
+
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#regsitroacademia">
+            Registra tu academia </button>
+
+          <!-- Modal -->
+          <div class="modal fade" id="regsitroacademia" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="regsitroacademia">Formulsrio de registro de academia</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-dialog modal-dialog-scrollable">
+                  <!-- Formulario de registro de academia -->
+                  <form action="" class="form">
+                    <div>
+                      <label for="">Nombre de la academia</label>
+                      <input type="text">
+                    </div>
+                    <br>
+                    <div>
+                      <label for="">Dirección (por favor incluir ciudad y departamento)</label>
+                      <input type="text">
+                    </div>
+                    <br>
+                    <div>
+                      <label for="">Nombre de Equipo</label>
+                      <input type="text">
+                    </div>
+                    <br>
+                    <div>
+                      <label for="">email / instagram</label>
+                      <input type="text">
+                    </div>
+                    <br>
+                    <div>
+                      <label for="">Año de inicio (e.g. 2020)</label>
+                      <input type="text">
+                    </div>
+                    <br>
+                    <div>
+                      <label for="">Origen Academia - Nacional o Internacional (por favor detallar país de
+                        origen)</label>
+                      <input type="text">
+                    </div>
+                    <br>
+                    <div>
+                      <label for="">Origen equipo (si es el mismo que la academia también completar)</label>
+                      <input type="text">
+                    </div>
+                    <br>
+                    <div>
+                      <label for="">Mestre/Coach/Instructor a cargo de la academia y/o equipo</label>
+                      <input type="text">
+                    </div>
+                    <br>
+                    <div>
+                      <label for="">Donde puedo encontrar un logo de la academia/equipo?</label>
+                      <input type="text">
+                    </div>
+                    <br>
+                    <div>
+                      <label for="">Cantidad de integrantes activos</label>
+                      <input type="number">
+                    </div>
+
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                  <button type="button" class="btn btn-primary">Enviar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+<!-- Formulario registro arbitros -->
+
+        <div class="d-flex flex-column gap-2">
+          <img src="../img/LUYBJJ-150×150.png" alt="LUYBJJ-150×150 logo" width="30px" height="30px">
+          <a href="../pages/registro.html#arbitros_registrados"><h4 class="fw-semibold mb-0">Árbitros</h4></a>
+
+          <p class="text-muted">Formulario de registro de árbitors</p>
+
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#registroarbitros">
+            Registrate</button>
+
+          <!-- Modal -->
+          <div class="modal fade" id="registroarbitros" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="registroarbitros">Registro de árbitros</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div>
+                    <label for="">Nombre (o nombres si tenés mas de uno y queres compartirlo)</label>
+                    <input type="text">
+                  </div>
+                  <br>
+                  <div>
+                    <label for="">Apellidos (uno o dos, como prefieras)</label>
+                    <input type="text">
+                  </div>
+                  <br>
+                  <div>
+                    <label for="">Fecha de nacimiento</label>
+                    <input type="date">
+                  </div>
+                  <br>
+                  <div>
+                    <label for="">email / instagram</label>
+                    <input type="text">
+                  </div>
+                  <br>
+                  <div>
+                    <label for="">Año de certificación como árbitro (e.g. 2020)</label>
+                    <input type="text">
+                  </div>
+                  <br>
+
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                  <button type="button" class="btn btn-primary">Enviar</button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </nav>
+
+        <div class="d-flex flex-column gap-2">
+          <img src="../img/LUYBJJ-150×150.png" alt="LUYBJJ-150×150 logo" width="30px" height="30px">
+          <h4 class="fw-semibold mb-0">Actualización datos</h4>
+
+          <p class="text-muted">Formulario de actualización de datos</p>
+
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#actualizaciondatos">
+            Pedido de actualización datos
+          </button>
+
+          <!-- Modal -->
+          <div class="modal fade" id="actualizaciondatos" data-bs-backdrop="static" data-bs-keyboard="false"
+            tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="actualizaciondatos">Informanos de datos que quieras actualizar</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <!-- Formulario de asctualización de registro -->
+
+                  <div>
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                  </div>
+
+                  <footer class="main-footer">
+                    <div class="footer-content"></div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                  <button type="button" class="btn btn-primary">Enviar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+  </div>
 
 
 
 
 
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-        crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
